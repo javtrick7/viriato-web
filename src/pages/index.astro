@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Viriato — La inteligencia de la tierra">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Viriato · Living Lab · MindFarm</div>
+      <h1>La inteligencia<br>de la tierra</h1>
+      <p class="subtitle">
+        Una finca agroecológica donde desarrollamos herramientas digitales
+        para ayudar a pequeñas explotaciones a entender su suelo y tomar
+        mejores decisiones.
+      </p>
+      <div class="btn-group">
+        <a href={`${base}proyecto/`} class="btn btn-primary">Conocer el proyecto</a>
+        <a href="https://mindfarm-demo.streamlit.app" class="btn btn-outline-light" target="_blank">
+          Entrar en MindFarm
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRES NIVELES -->
+  <section class="section">
+    <div class="container">
+      <h2>Qué es Viriato</h2>
+      <p class="mt-2 mb-3">
+        El proyecto se estructura en tres niveles complementarios.
+        Cada uno tiene su lógica, pero solo funcionan cuando trabajan juntos.
+      </p>
+      <div class="grid grid-3">
+        <div class="card card-accent-brown">
+          <div class="card-label">Nivel 1 — La finca</div>
+          <div class="card-title">Viriato Agropecuaria</div>
+          <div class="card-body">
+            Producción agroecológica real. Olivo, castaño, huerta y ganadería
+            extensiva en dos localizaciones del sur de España.
+          </div>
+        </div>
+        <div class="card card-accent">
+          <div class="card-label">Nivel 2 — La investigación</div>
+          <div class="card-title">Viriato Living Lab</div>
+          <div class="card-body">
+            Sensorización, modelos agronómicos y experimentación en campo
+            real. La finca como infraestructura científica abierta.
+          </div>
+        </div>
+        <div class="card card-accent">
+          <div class="card-label">Nivel 3 — La herramienta</div>
+          <div class="card-title">MindFarm</div>
+          <div class="card-body">
+            Datos del campo convertidos en decisiones claras.
+            Recomendación de riego, monitorización y analítica para
+            el agricultor.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section class="section">
+    <div class="container">
+      <p>
+        Creemos que el futuro del campo pasa por entender mejor la tierra.
+        Durante siglos, los agricultores han tomado decisiones observando
+        el suelo, el clima y los cultivos. Hoy disponemos de herramientas
+        que permiten escuchar ese mismo paisaje con mayor precisión.
+      </p>
+      <p>
+        En Viriato combinamos agricultura real, conocimiento científico y
+        tecnología abierta para comprender cómo funcionan los sistemas
+        agrícolas. Nuestra finca es un laboratorio vivo donde experimentamos
+        con agricultura regenerativa y desarrollamos herramientas que
+        transforman datos en decisiones útiles.
+      </p>
+      <p>
+        La innovación agrícola no debe estar reservada a grandes
+        explotaciones. Nuestro objetivo es poner conocimiento y tecnología
+        al servicio de las pequeñas fincas.
+      </p>
+      <div class="pullquote">
+        <p>Cuidar el suelo no es solo una práctica agrícola. Es una forma de cuidar el futuro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL PROBLEMA -->
+  <section class="section">
+    <div class="container">
+      <h2>El problema</h2>
+      <p class="mt-2">
+        Las pequeñas explotaciones afrontan sequías más frecuentes,
+        degradación de suelos y costes crecientes. Las decisiones
+        agronómicas siguen tomándose con poca información. Y muchas
+        herramientas de agricultura de precisión son demasiado caras,
+        demasiado complejas o demasiado alejadas de la realidad de las
+        fincas familiares.
+      </p>
+      <p>
+        Viriato nace para explorar una alternativa: <strong>tecnología
+        útil, comprensible y accesible</strong>, desarrollada desde una
+        explotación real.
+      </p>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="metric">
+          <div class="metric-value">~150k</div>
+          <div class="metric-label">litros de agua</div>
+          <div class="metric-detail">preservados por temporada frente a riego convencional</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">24/7</div>
+          <div class="metric-label">monitorización</div>
+          <div class="metric-detail">lectura continua cada 15 min en campo real</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">FAO-56</div>
+          <div class="metric-label">modelo agronómico</div>
+          <div class="metric-detail">Penman-Monteith + balance hídrico diario</div>
+        </div>
+      </div>
+      <p class="muted text-center mt-2">
+        Estimaciones basadas en benchmarks regionales y bibliografía de riego de precisión.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Explora el proyecto</h2>
+      <div class="btn-group" style="justify-content:center;">
+        <a href={`${base}proyecto/`} class="btn btn-secondary">El proyecto</a>
+        <a href={`${base}living-lab/`} class="btn btn-secondary">Living Lab</a>
+        <a href="https://mindfarm-demo.streamlit.app" class="btn btn-primary" target="_blank">
+          Entrar en MindFarm
+        </a>
+      </div>
+      <p class="mt-4">
+        ¿Tienes una explotación, eres una institución o simplemente
+        tienes una pregunta? Este proyecto es abierto y colaborativo.
+      </p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href={`${base}colaboraciones/`} class="btn btn-secondary">Colaborar</a>
+        <a href="mailto:viriatocooperativa@gmail.com" class="btn btn-secondary">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

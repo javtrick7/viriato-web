@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Viriato — Living Lab" description="La finca como laboratorio: sensorización, modelos agronómicos y experimentación en campo real.">
+
+  <section class="hero-page">
+    <div class="container">
+      <div class="eyebrow">Living Lab</div>
+      <h1>La finca como laboratorio</h1>
+      <p class="subtitle">
+        Usamos la propia explotación como infraestructura de investigación.
+        Sensores en el suelo, modelos agronómicos y experimentación
+        continua — todo validado en campo real.
+      </p>
+    </div>
+  </section>
+
+  <!-- FLUJO DE DATOS -->
+  <section class="section">
+    <div class="container">
+      <h2>Del suelo a la decisión</h2>
+      <div class="flow mt-3">
+        <div class="flow-steps">
+          <strong>Sensor RS485</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>LoRa</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>RPi</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>InfluxDB</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>Analítica FAO-56</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>MindFarm</strong>
+        </div>
+        <div class="flow-caption">
+          Lectura cada 15 min · Pipeline automatizado · Recomendación diaria
+        </div>
+      </div>
+      <div class="grid grid-3 mt-3">
+        <div class="card card-accent">
+          <div class="card-label">Paso 1</div>
+          <div class="card-title">El campo habla</div>
+          <div class="card-body">
+            Sensores RS485 enterrados a 30 cm miden humedad, temperatura y
+            conductividad eléctrica cada 15 minutos. Los datos viajan por
+            LoRa hasta la RPi.
+          </div>
+        </div>
+        <div class="card card-accent">
+          <div class="card-label">Paso 2</div>
+          <div class="card-title">El gemelo interpreta</div>
+          <div class="card-body">
+            Un gemelo digital integra modelo FAO-56, meteorología y series
+            históricas para calcular balance hídrico y proyecciones a
+            7 días.
+          </div>
+        </div>
+        <div class="card card-accent">
+          <div class="card-label">Paso 3</div>
+          <div class="card-title">Tú decides</div>
+          <div class="card-body">
+            Cada mañana recibes una recomendación clara: regar o no,
+            cuánto y por qué. La última palabra es tuya.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFRAESTRUCTURA -->
+  <section class="section">
+    <div class="container">
+      <h2>Infraestructura desplegada</h2>
+      <div class="grid grid-3 mt-3">
+        <div class="metric">
+          <div class="metric-value">24/7</div>
+          <div class="metric-label">monitorización</div>
+          <div class="metric-detail">continua en campo real</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">15 min</div>
+          <div class="metric-label">frecuencia</div>
+          <div class="metric-detail">humedad, temperatura, EC</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">FAO-56</div>
+          <div class="metric-label">modelo</div>
+          <div class="metric-detail">Penman-Monteith + balance hídrico</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTIGACIÓN -->
+  <section class="section">
+    <div class="container">
+      <h2>Líneas de investigación</h2>
+      <div class="grid grid-3 mt-3">
+        <div class="card card-accent">
+          <div class="card-label">En producción</div>
+          <div class="card-title">Olivar y huerta — Padul</div>
+          <div class="card-body">
+            Primer banco de pruebas operativo. Gemelo digital generando
+            recomendaciones diarias de riego y monitorizando variables de
+            suelo en tiempo real.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-label">Próximo objetivo</div>
+          <div class="card-title">Castaño — Riego deficitario</div>
+          <div class="card-body">
+            El castaño necesita ~150 mm durante el engorde del fruto.
+            Aplicaremos riego de déficit regulado con precisión.
+            Referencia: Nieto Serrano et al. (2021), ahorro 30–40%.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-label">Exploración</div>
+          <div class="card-title">Forraje hidropónico</div>
+          <div class="card-body">
+            Producción de forraje para ganadería extensiva en sistemas
+            monitorizados. Objetivo: cerrar el ciclo agua-suelo-animal
+            con el mínimo consumo hídrico.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="pullquote">
+        <p>
+          El Living Lab es abierto a colaboración con universidades,
+          centros de investigación y proyectos de innovación agraria.
+        </p>
+      </div>
+      <div class="btn-group">
+        <a href="https://mindfarm-demo.streamlit.app" class="btn btn-primary" target="_blank">
+          Entrar en MindFarm
+        </a>
+        <a href={`${base}colaboraciones/`} class="btn btn-secondary">Colaborar</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

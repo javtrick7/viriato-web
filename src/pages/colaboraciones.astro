@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Viriato — Colaboraciones" description="Un proyecto abierto a universidades, centros de investigación y proyectos de innovación agraria.">
+
+  <section class="hero-page">
+    <div class="container">
+      <div class="eyebrow">Colaboraciones</div>
+      <h1>Un proyecto abierto</h1>
+      <p class="subtitle">
+        Viriato Living Lab está concebido como espacio de colaboración
+        con universidades, centros de investigación, administraciones
+        públicas y proyectos de innovación agraria.
+      </p>
+    </div>
+  </section>
+
+  <!-- ÁREAS -->
+  <section class="section">
+    <div class="container">
+      <h2>Nos interesa colaborar en</h2>
+      <div class="grid grid-2 mt-3">
+        <div class="card card-accent">
+          <div class="card-title">Agricultura regenerativa</div>
+          <div class="card-body">
+            Manejo del suelo, cubiertas vegetales, biodiversidad funcional,
+            sistemas agroforestales.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-title">Modelos de decisión</div>
+          <div class="card-body">
+            Balance hídrico, Kc dinámico, detección temprana de estrés,
+            gemelo digital progresivo.
+          </div>
+        </div>
+        <div class="card card-accent">
+          <div class="card-title">Sensorización y monitorización</div>
+          <div class="card-body">
+            Sensores de suelo, estaciones meteorológicas, redes LoRa,
+            pipelines de datos en tiempo real.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-title">Transferencia tecnológica</div>
+          <div class="card-body">
+            Replicabilidad para pequeñas explotaciones, formación,
+            documentación abierta, herramientas accesibles.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCIAS -->
+  <section class="section">
+    <div class="container">
+      <h2>Base científica</h2>
+      <p class="mt-2">
+        El desarrollo se apoya en metodología consolidada:
+      </p>
+      <p>
+        <strong>FAO-56 Penman-Monteith</strong> — estándar internacional
+        para evapotranspiración y necesidades hídricas.
+      </p>
+      <p>
+        <strong>Nieto Serrano, H. et al. (2021)</strong> — riego
+        deficitario regulado en castaño, ahorro 30–40% manteniendo calidad.
+      </p>
+      <p>
+        Toda la metodología y el código son abiertos. La transparencia
+        científica y técnica es la base de la colaboración.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <p>
+        Si trabajas en investigación agraria, gestionas una explotación o
+        representas a una institución, nos encantaría conversar.
+      </p>
+      <div class="btn-group">
+        <a href="mailto:viriatocooperativa@gmail.com" class="btn btn-primary">Contactar</a>
+        <a href={`${base}proyecto/`} class="btn btn-secondary">Conocer el proyecto</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
