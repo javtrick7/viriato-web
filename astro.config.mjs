@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://viriatocooperativa.github.io',
+  site: 'https://javtrick7.github.io',
   base: '/viriato-web',
 });
