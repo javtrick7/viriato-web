@@ -3,24 +3,37 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="Viriato — Living Lab" description="La finca como laboratorio: sensorización, modelos agronómicos y experimentación en campo real.">
-
+<BaseLayout
+  title="Viriato - Living Lab"
+  description="La finca como infraestructura de investigacion aplicada y validacion en campo real."
+>
   <section class="hero-page">
     <div class="container">
       <div class="eyebrow">Living Lab</div>
-      <h1>La finca como laboratorio</h1>
+      <h1>Investigacion aplicada que pisa suelo real</h1>
       <p class="subtitle">
-        Usamos la propia explotación como infraestructura de investigación.
-        Sensores en el suelo, modelos agronómicos y experimentación
-        continua — todo validado en campo real.
+        El living lab de Viriato usa la propia explotacion como
+        infraestructura de investigacion. Aqui se sensorizan procesos
+        reales, se prueban modelos agronomicos y se valida si una herramienta
+        sirve o no sirve en campo.
       </p>
     </div>
   </section>
 
-  <!-- FLUJO DE DATOS -->
   <section class="section">
     <div class="container">
-      <h2>Del suelo a la decisión</h2>
+      <h2>Que significa aqui living lab</h2>
+      <p class="mt-2">
+        No es un showroom tecnologico. Es un marco de experimentacion
+        incrustado en la vida de una finca, con sus restricciones, sus tiempos
+        y sus decisiones reales.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Del suelo a la decision</h2>
       <div class="flow mt-3">
         <div class="flow-steps">
           <strong>Sensor RS485</strong>
@@ -31,12 +44,12 @@ const base = import.meta.env.BASE_URL;
           <span class="arrow">&rarr;</span>
           <strong>InfluxDB</strong>
           <span class="arrow">&rarr;</span>
-          <strong>Analítica FAO-56</strong>
+          <strong>FAO-56</strong>
           <span class="arrow">&rarr;</span>
-          <strong>MindFarm</strong>
+          <strong>Decision</strong>
         </div>
         <div class="flow-caption">
-          Lectura cada 15 min · Pipeline automatizado · Recomendación diaria
+          Lectura cada 15 min · pipeline automatizado · recomendacion diaria
         </div>
       </div>
       <div class="grid grid-3 mt-3">
@@ -44,108 +57,104 @@ const base = import.meta.env.BASE_URL;
           <div class="card-label">Paso 1</div>
           <div class="card-title">El campo habla</div>
           <div class="card-body">
-            Sensores RS485 enterrados a 30 cm miden humedad, temperatura y
-            conductividad eléctrica cada 15 minutos. Los datos viajan por
-            LoRa hasta la RPi.
+            Lecturas continuas de suelo permiten observar lo que ocurre en
+            campo sin esperar a que el problema ya sea evidente.
           </div>
         </div>
         <div class="card card-accent">
           <div class="card-label">Paso 2</div>
           <div class="card-title">El gemelo interpreta</div>
           <div class="card-body">
-            Un gemelo digital integra modelo FAO-56, meteorología y series
-            históricas para calcular balance hídrico y proyecciones a
-            7 días.
+            El modelo integra FAO-56, meteorologia y balance hidrico para
+            traducir datos dispersos en una lectura operativa.
           </div>
         </div>
         <div class="card card-accent">
           <div class="card-label">Paso 3</div>
-          <div class="card-title">Tú decides</div>
+          <div class="card-title">Tu decides</div>
           <div class="card-body">
-            Cada mañana recibes una recomendación clara: regar o no,
-            cuánto y por qué. La última palabra es tuya.
+            La experimentacion termina en una decision concreta: que hacer,
+            cuando y con que criterio.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INFRAESTRUCTURA -->
   <section class="section">
     <div class="container">
-      <h2>Infraestructura desplegada</h2>
+      <h2>Que se valida hoy</h2>
+      <p class="mt-2">
+        Aqui se valida monitorizacion continua, modelo FAO-56, logica de
+        balance hidrico, proyecciones y formas de presentar recomendaciones
+        comprensibles para quien decide en campo.
+      </p>
       <div class="grid grid-3 mt-3">
         <div class="metric">
-          <div class="metric-value">24/7</div>
-          <div class="metric-label">monitorización</div>
-          <div class="metric-detail">continua en campo real</div>
-        </div>
-        <div class="metric">
           <div class="metric-value">15 min</div>
-          <div class="metric-label">frecuencia</div>
-          <div class="metric-detail">humedad, temperatura, EC</div>
+          <div class="metric-label">lectura</div>
+          <div class="metric-detail">monitorizacion continua en campo</div>
         </div>
         <div class="metric">
           <div class="metric-value">FAO-56</div>
           <div class="metric-label">modelo</div>
-          <div class="metric-detail">Penman-Monteith + balance hídrico</div>
+          <div class="metric-detail">base del gemelo digital MVP</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">Padul</div>
+          <div class="metric-label">despliegue</div>
+          <div class="metric-detail">operativo en campo real</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INVESTIGACIÓN -->
   <section class="section">
     <div class="container">
-      <h2>Líneas de investigación</h2>
+      <h2>Generar conocimiento que pueda salir de aqui</h2>
+      <p class="mt-2">
+        El objetivo no es acumular datos. Es producir conocimiento util,
+        replicable y conectable con otras pequenas explotaciones y otros
+        contextos mediterraneos.
+      </p>
       <div class="grid grid-3 mt-3">
         <div class="card card-accent">
-          <div class="card-label">En producción</div>
-          <div class="card-title">Olivar y huerta — Padul</div>
+          <div class="card-label">Despliegue activo</div>
+          <div class="card-title">Padul</div>
           <div class="card-body">
-            Primer banco de pruebas operativo. Gemelo digital generando
-            recomendaciones diarias de riego y monitorizando variables de
-            suelo en tiempo real.
+            Banco operativo de aprendizaje con monitorizacion continua,
+            recomendacion de riego y lectura tipo gemelo digital.
           </div>
         </div>
         <div class="card card-accent-brown">
-          <div class="card-label">Próximo objetivo</div>
-          <div class="card-title">Castaño — Riego deficitario</div>
+          <div class="card-label">Linea agronomica</div>
+          <div class="card-title">Castano y olivar</div>
           <div class="card-body">
-            El castaño necesita ~150 mm durante el engorde del fruto.
-            Aplicaremos riego de déficit regulado con precisión.
-            Referencia: Nieto Serrano et al. (2021), ahorro 30–40%.
+            Desarrollo de lineas futuras ligadas a riego deficitario,
+            validacion local y transferencia a otros contextos productivos.
           </div>
         </div>
         <div class="card">
-          <div class="card-label">Exploración</div>
-          <div class="card-title">Forraje hidropónico</div>
+          <div class="card-label">Transferencia</div>
+          <div class="card-title">Conocimiento utilizable</div>
           <div class="card-body">
-            Producción de forraje para ganadería extensiva en sistemas
-            monitorizados. Objetivo: cerrar el ciclo agua-suelo-animal
-            con el mínimo consumo hídrico.
+            Lo que se aprende aqui debe poder convertirse en criterio,
+            herramienta y colaboracion para otras pequenas explotaciones.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section">
     <div class="container">
       <div class="pullquote">
-        <p>
-          El Living Lab es abierto a colaboración con universidades,
-          centros de investigación y proyectos de innovación agraria.
-        </p>
+        <p>El living lab no termina en los datos. Alimenta una herramienta real: MindFarm.</p>
       </div>
       <div class="btn-group">
-        <a href="https://mindfarm-demo.streamlit.app" class="btn btn-primary" target="_blank">
-          Entrar en MindFarm
-        </a>
+        <a href={`${base}mindfarm/`} class="btn btn-primary">Ver MindFarm</a>
         <a href={`${base}colaboraciones/`} class="btn btn-secondary">Colaborar</a>
       </div>
     </div>
   </section>
-
 </BaseLayout>

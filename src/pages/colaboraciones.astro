@@ -3,91 +3,115 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="Viriato — Colaboraciones" description="Un proyecto abierto a universidades, centros de investigación y proyectos de innovación agraria.">
-
+<BaseLayout
+  title="Viriato - Colaboraciones"
+  description="Colaboraciones desde campo real, living lab y producto digital."
+>
   <section class="hero-page">
     <div class="container">
       <div class="eyebrow">Colaboraciones</div>
-      <h1>Un proyecto abierto</h1>
+      <h1>Colaborar para construir herramientas utiles desde campo real</h1>
       <p class="subtitle">
-        Viriato Living Lab está concebido como espacio de colaboración
-        con universidades, centros de investigación, administraciones
-        públicas y proyectos de innovación agraria.
+        Viriato esta abierto a colaboraciones con universidades, centros de
+        investigacion, administraciones y proyectos de innovacion que quieran
+        trabajar con una combinacion poco habitual: explotacion real, living
+        lab y producto digital en la misma arquitectura.
       </p>
     </div>
   </section>
 
-  <!-- ÁREAS -->
   <section class="section">
     <div class="container">
-      <h2>Nos interesa colaborar en</h2>
+      <h2>Con quien nos interesa colaborar</h2>
+      <p class="mt-2">
+        Nos interesa colaborar con quienes necesiten campo real para validar,
+        transferir o aterrizar tecnologia y conocimiento aplicado.
+      </p>
       <div class="grid grid-2 mt-3">
         <div class="card card-accent">
-          <div class="card-title">Agricultura regenerativa</div>
+          <div class="card-title">Universidades y centros</div>
           <div class="card-body">
-            Manejo del suelo, cubiertas vegetales, biodiversidad funcional,
-            sistemas agroforestales.
+            Entornos de validacion en campo, experimentacion aplicada y
+            transferencia sobre problemas agronomicos reales.
           </div>
         </div>
         <div class="card card-accent-brown">
-          <div class="card-title">Modelos de decisión</div>
+          <div class="card-title">Proyectos de innovacion agraria</div>
           <div class="card-body">
-            Balance hídrico, Kc dinámico, detección temprana de estrés,
-            gemelo digital progresivo.
+            Alianzas orientadas a transferencia, validacion y construccion de
+            herramientas utiles para pequenas explotaciones.
           </div>
         </div>
         <div class="card card-accent">
-          <div class="card-title">Sensorización y monitorización</div>
+          <div class="card-title">Aliados tecnologicos</div>
           <div class="card-body">
-            Sensores de suelo, estaciones meteorológicas, redes LoRa,
-            pipelines de datos en tiempo real.
+            Sensorizacion, modelado agronomico, gemelo digital y apoyo a la
+            decision con aterrizaje real en campo.
           </div>
         </div>
         <div class="card card-accent-brown">
-          <div class="card-title">Transferencia tecnológica</div>
+          <div class="card-title">Administraciones y territorio</div>
           <div class="card-body">
-            Replicabilidad para pequeñas explotaciones, formación,
-            documentación abierta, herramientas accesibles.
+            Iniciativas interesadas en transferencia tecnologica, resiliencia
+            agraria y herramientas accesibles para pequena escala.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- REFERENCIAS -->
   <section class="section">
     <div class="container">
-      <h2>Base científica</h2>
-      <p class="mt-2">
-        El desarrollo se apoya en metodología consolidada:
-      </p>
-      <p>
-        <strong>FAO-56 Penman-Monteith</strong> — estándar internacional
-        para evapotranspiración y necesidades hídricas.
-      </p>
-      <p>
-        <strong>Nieto Serrano, H. et al. (2021)</strong> — riego
-        deficitario regulado en castaño, ahorro 30–40% manteniendo calidad.
-      </p>
-      <p>
-        Toda la metodología y el código son abiertos. La transparencia
-        científica y técnica es la base de la colaboración.
-      </p>
+      <h2>Lineas de colaboracion</h2>
+      <div class="grid grid-2 mt-3">
+        <div class="card card-accent">
+          <div class="card-title">Agricultura regenerativa y salud del suelo</div>
+          <div class="card-body">
+            Manejo del suelo, practicas regenerativas y validacion de
+            conocimiento aplicable fuera del proyecto.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-title">Monitorizacion y modelado agronomico</div>
+          <div class="card-body">
+            Sensorizacion, analitica derivada, balance hidrico y lectura
+            agronomica basada en datos.
+          </div>
+        </div>
+        <div class="card card-accent">
+          <div class="card-title">Transferencia tecnologica</div>
+          <div class="card-body">
+            Replicabilidad, documentacion abierta y herramientas que puedan
+            servir a pequenas explotaciones reales.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-title">Producto digital y gemelo digital aplicado</div>
+          <div class="card-body">
+            Evolucion de herramientas que conecten experimentacion, lectura
+            operativa y decision agronomica.
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section">
     <div class="container">
+      <h2>Que ofrece Viriato como entorno</h2>
+      <p class="mt-2">
+        Viriato ofrece contexto real, infraestructura experimental y una capa
+        de producto donde el aprendizaje puede aterrizar en herramienta util.
+      </p>
       <p>
-        Si trabajas en investigación agraria, gestionas una explotación o
-        representas a una institución, nos encantaría conversar.
+        Si trabajas en investigacion agraria, gestionas una explotacion o
+        representas a una institucion, nos interesara entender que problema
+        quieres validar o transferir.
       </p>
       <div class="btn-group">
         <a href="mailto:viriatocooperativa@gmail.com" class="btn btn-primary">Contactar</a>
-        <a href={`${base}proyecto/`} class="btn btn-secondary">Conocer el proyecto</a>
+        <a href={`${base}living-lab/`} class="btn btn-secondary">Ver Living Lab</a>
       </div>
     </div>
   </section>
-
 </BaseLayout>

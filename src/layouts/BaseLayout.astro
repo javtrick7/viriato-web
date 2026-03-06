@@ -4,9 +4,15 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Agricultura regenerativa, ciencia aplicada y tecnología abierta para pequeñas explotaciones." } = Astro.props;
+const {
+  title,
+  description = 'Agricultura regenerativa, ciencia aplicada y tecnologia abierta para pequenas explotaciones.',
+} = Astro.props;
 
 const base = import.meta.env.BASE_URL;
+const pathname = Astro.url.pathname;
+const navLinkClass = (href: string) =>
+  pathname === href || pathname === `${href}index.html` ? 'active' : '';
 ---
 
 <!DOCTYPE html>
@@ -23,10 +29,10 @@ const base = import.meta.env.BASE_URL;
     <div class="container nav-inner">
       <a href={`${base}`} class="nav-brand">Viriato</a>
       <ul class="nav-links">
-        <li><a href={`${base}proyecto/`}>Proyecto</a></li>
-        <li><a href={`${base}living-lab/`}>Living Lab</a></li>
-        <li><a href="https://mindfarm-demo.streamlit.app" target="_blank">MindFarm</a></li>
-        <li><a href={`${base}colaboraciones/`}>Colaborar</a></li>
+        <li><a href={`${base}proyecto/`} class={navLinkClass(`${base}proyecto/`)}>Proyecto</a></li>
+        <li><a href={`${base}living-lab/`} class={navLinkClass(`${base}living-lab/`)}>Living Lab</a></li>
+        <li><a href={`${base}mindfarm/`} class={navLinkClass(`${base}mindfarm/`)}>MindFarm</a></li>
+        <li><a href={`${base}colaboraciones/`} class={navLinkClass(`${base}colaboraciones/`)}>Colaborar</a></li>
       </ul>
     </div>
   </nav>
@@ -38,7 +44,7 @@ const base = import.meta.env.BASE_URL;
   <footer class="footer">
     <div class="container">
       <p>
-        Viriato Cooperativa Integral · Agricultura regenerativa · Código abierto
+        Viriato Cooperativa Integral · Agricultura regenerativa · Codigo abierto
       </p>
       <p class="mt-1">
         <a href="mailto:viriatocooperativa@gmail.com">viriatocooperativa@gmail.com</a>

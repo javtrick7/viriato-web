@@ -3,158 +3,163 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="Viriato — La inteligencia de la tierra">
-
-  <!-- HERO -->
+<BaseLayout
+  title="Viriato - Una finca que produce alimento, conocimiento y decisiones mas claras"
+  description="Explotacion real, living lab y producto digital para ayudar a pequenas explotaciones a decidir mejor."
+>
   <section class="hero">
     <div class="container">
-      <div class="eyebrow">Viriato · Living Lab · MindFarm</div>
-      <h1>La inteligencia<br>de la tierra</h1>
+      <div class="eyebrow">Viriato · explotacion real · living lab · producto digital</div>
+      <h1>Una finca que produce alimento,<br />conocimiento y decisiones mas claras</h1>
       <p class="subtitle">
-        Una finca agroecológica donde desarrollamos herramientas digitales
-        para ayudar a pequeñas explotaciones a entender su suelo y tomar
-        mejores decisiones.
+        Viriato convierte una explotacion real en laboratorio vivo y en
+        herramienta util para pequenas explotaciones. Agricultura
+        regenerativa, investigacion aplicada y un producto digital para leer
+        mejor el suelo y decidir mejor en campo.
       </p>
       <div class="btn-group">
         <a href={`${base}proyecto/`} class="btn btn-primary">Conocer el proyecto</a>
-        <a href="https://mindfarm-demo.streamlit.app" class="btn btn-outline-light" target="_blank">
-          Entrar en MindFarm
-        </a>
+        <a href={`${base}mindfarm/`} class="btn btn-outline-light">Ver MindFarm</a>
       </div>
     </div>
   </section>
 
-  <!-- TRES NIVELES -->
   <section class="section">
     <div class="container">
-      <h2>Qué es Viriato</h2>
+      <h2>Decidir a ciegas sale cada vez mas caro</h2>
+      <p class="mt-2">
+        Las pequenas explotaciones tienen cada vez menos margen para el
+        error. El agua cuesta mas, el clima se vuelve menos predecible y
+        muchas herramientas de agricultura de precision siguen pensadas para
+        otra escala, otro presupuesto y otra realidad.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Un sistema vivo en tres capas</h2>
       <p class="mt-2 mb-3">
-        El proyecto se estructura en tres niveles complementarios.
-        Cada uno tiene su lógica, pero solo funcionan cuando trabajan juntos.
+        Viriato no separa artificialmente produccion, investigacion y
+        herramienta. Cada capa cumple una funcion distinta. Juntas forman un
+        sistema completo.
       </p>
       <div class="grid grid-3">
         <div class="card card-accent-brown">
-          <div class="card-label">Nivel 1 — La finca</div>
+          <div class="card-label">Base productiva</div>
           <div class="card-title">Viriato Agropecuaria</div>
           <div class="card-body">
-            Producción agroecológica real. Olivo, castaño, huerta y ganadería
-            extensiva en dos localizaciones del sur de España.
+            La base productiva. Una explotacion real donde se cultiva, se
+            maneja el suelo y se toman decisiones con consecuencias reales.
           </div>
         </div>
         <div class="card card-accent">
-          <div class="card-label">Nivel 2 — La investigación</div>
+          <div class="card-label">Capa experimental</div>
           <div class="card-title">Viriato Living Lab</div>
           <div class="card-body">
-            Sensorización, modelos agronómicos y experimentación en campo
-            real. La finca como infraestructura científica abierta.
+            La finca funciona como infraestructura de investigacion aplicada
+            para sensorizacion, modelado y validacion en campo.
           </div>
         </div>
         <div class="card card-accent">
-          <div class="card-label">Nivel 3 — La herramienta</div>
+          <div class="card-label">Capa de producto</div>
           <div class="card-title">MindFarm</div>
           <div class="card-body">
-            Datos del campo convertidos en decisiones claras.
-            Recomendación de riego, monitorización y analítica para
-            el agricultor.
+            La herramienta que convierte datos del suelo, clima y manejo en
+            informacion operativa para decidir mejor.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MANIFIESTO -->
   <section class="section">
     <div class="container">
       <p>
-        Creemos que el futuro del campo pasa por entender mejor la tierra.
-        Durante siglos, los agricultores han tomado decisiones observando
-        el suelo, el clima y los cultivos. Hoy disponemos de herramientas
-        que permiten escuchar ese mismo paisaje con mayor precisión.
-      </p>
-      <p>
-        En Viriato combinamos agricultura real, conocimiento científico y
-        tecnología abierta para comprender cómo funcionan los sistemas
-        agrícolas. Nuestra finca es un laboratorio vivo donde experimentamos
-        con agricultura regenerativa y desarrollamos herramientas que
-        transforman datos en decisiones útiles.
-      </p>
-      <p>
-        La innovación agrícola no debe estar reservada a grandes
-        explotaciones. Nuestro objetivo es poner conocimiento y tecnología
-        al servicio de las pequeñas fincas.
+        No construimos tecnologia para el campo desde fuera del campo. La
+        construimos desde una explotacion real, con sus limites, sus ritmos y
+        sus necesidades. Eso obliga a que cada idea se pruebe de verdad y a
+        que cada herramienta tenga que demostrar utilidad.
       </p>
       <div class="pullquote">
-        <p>Cuidar el suelo no es solo una práctica agrícola. Es una forma de cuidar el futuro.</p>
+        <p>La finca hace las preguntas. El living lab las convierte en conocimiento. MindFarm las convierte en decisiones.</p>
       </div>
     </div>
   </section>
 
-  <!-- EL PROBLEMA -->
   <section class="section">
     <div class="container">
-      <h2>El problema</h2>
+      <h2>Del living lab al producto</h2>
       <p class="mt-2">
-        Las pequeñas explotaciones afrontan sequías más frecuentes,
-        degradación de suelos y costes crecientes. Las decisiones
-        agronómicas siguen tomándose con poca información. Y muchas
-        herramientas de agricultura de precisión son demasiado caras,
-        demasiado complejas o demasiado alejadas de la realidad de las
-        fincas familiares.
+        MindFarm es la consecuencia tangible del sistema. No es una app
+        decorativa. Es la herramienta que traduce lectura de suelo,
+        meteorologia y modelos agronomicos en una pregunta concreta: que esta
+        pasando en la finca y que decision conviene tomar hoy.
       </p>
-      <p>
-        Viriato nace para explorar una alternativa: <strong>tecnología
-        útil, comprensible y accesible</strong>, desarrollada desde una
-        explotación real.
-      </p>
+      <div class="btn-group">
+        <a href={`${base}mindfarm/`} class="btn btn-secondary">Ver MindFarm</a>
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Entrar en la herramienta
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- NÚMEROS -->
   <section class="section">
     <div class="container">
+      <h2>Esto ya existe en campo</h2>
       <div class="grid grid-3">
         <div class="metric">
-          <div class="metric-value">~150k</div>
-          <div class="metric-label">litros de agua</div>
-          <div class="metric-detail">preservados por temporada frente a riego convencional</div>
-        </div>
-        <div class="metric">
-          <div class="metric-value">24/7</div>
-          <div class="metric-label">monitorización</div>
-          <div class="metric-detail">lectura continua cada 15 min en campo real</div>
+          <div class="metric-value">15 min</div>
+          <div class="metric-label">frecuencia</div>
+          <div class="metric-detail">lectura continua en campo real</div>
         </div>
         <div class="metric">
           <div class="metric-value">FAO-56</div>
-          <div class="metric-label">modelo agronómico</div>
-          <div class="metric-detail">Penman-Monteith + balance hídrico diario</div>
+          <div class="metric-label">modelo base</div>
+          <div class="metric-detail">gemelo digital MVP operativo</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">~150k</div>
+          <div class="metric-label">litros</div>
+          <div class="metric-detail">potencial estimado de ahorro frente a benchmark regional</div>
         </div>
       </div>
       <p class="muted text-center mt-2">
-        Estimaciones basadas en benchmarks regionales y bibliografía de riego de precisión.
+        Despliegue operativo actual en Padul. La cifra de ahorro es una estimacion basada en benchmark regional.
       </p>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section">
     <div class="container text-center">
-      <h2>Explora el proyecto</h2>
+      <h2>Recorre el sistema completo</h2>
       <div class="btn-group" style="justify-content:center;">
-        <a href={`${base}proyecto/`} class="btn btn-secondary">El proyecto</a>
+        <a href={`${base}proyecto/`} class="btn btn-secondary">Proyecto</a>
         <a href={`${base}living-lab/`} class="btn btn-secondary">Living Lab</a>
-        <a href="https://mindfarm-demo.streamlit.app" class="btn btn-primary" target="_blank">
-          Entrar en MindFarm
-        </a>
+        <a href={`${base}mindfarm/`} class="btn btn-secondary">MindFarm</a>
       </div>
       <p class="mt-4">
-        ¿Tienes una explotación, eres una institución o simplemente
-        tienes una pregunta? Este proyecto es abierto y colaborativo.
+        Si quieres entender el proyecto, explorar la herramienta o abrir una
+        conversacion, el recorrido ya esta listo.
       </p>
       <div class="btn-group" style="justify-content:center;">
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Entrar en la herramienta
+        </a>
         <a href={`${base}colaboraciones/`} class="btn btn-secondary">Colaborar</a>
         <a href="mailto:viriatocooperativa@gmail.com" class="btn btn-secondary">Contactar</a>
       </div>
     </div>
   </section>
-
 </BaseLayout>
