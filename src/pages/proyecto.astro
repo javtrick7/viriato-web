@@ -3,163 +3,149 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="Viriato — El Proyecto" description="Producción, investigación y tecnología en un mismo sistema agrícola.">
-
+<BaseLayout
+  title="Viriato - El Proyecto"
+  description="Explotacion real, investigacion aplicada y herramienta digital en un mismo sistema."
+>
   <section class="hero-page">
     <div class="container">
       <div class="eyebrow">El proyecto</div>
-      <h1>Producción, investigación y tecnología en un mismo sistema</h1>
+      <h1>No construimos tecnologia para el campo desde fuera del campo</h1>
       <p class="subtitle">
-        No es solo una finca. No es solo un laboratorio. No es solo una app.
-        Es un sistema integrado donde una explotación real genera conocimiento
-        aplicado y herramientas útiles para pequeñas explotaciones.
+        Viriato nace para demostrar que una pequena explotacion puede ser al
+        mismo tiempo sistema productivo, infraestructura de investigacion
+        aplicada y origen de una herramienta digital util.
       </p>
     </div>
   </section>
 
-  <!-- TRES NIVELES -->
   <section class="section">
     <div class="container">
-      <h2>Tres niveles, un solo sistema</h2>
-      <p class="mt-2 mb-3">
-        Cada uno tiene su lógica propia, pero solo funcionan de verdad
-        cuando trabajan juntos.
+      <h2>Por que existe ahora</h2>
+      <p class="mt-2">
+        El problema no es solo tecnologico. Es de escala, de contexto y de
+        acceso. Las pequenas fincas necesitan herramientas mas claras, mas
+        asequibles y mas arraigadas en su realidad material.
       </p>
-      <div class="grid grid-3">
+      <p>
+        Viriato existe para juntar tres capas que normalmente aparecen
+        separadas: la explotacion real, la investigacion aplicada y la
+        herramienta digital.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Tres capas, un solo sistema</h2>
+      <p class="mt-2 mb-3">
+        Cada capa responde a una necesidad distinta: producir, experimentar y
+        decidir mejor.
+      </p>
+      <div class="grid grid-3 mt-3">
         <div class="card card-accent-brown">
           <div class="card-label">Base productiva</div>
           <div class="card-title">Viriato Agropecuaria</div>
           <div class="card-body">
-            La cooperativa y explotación agrícola. Producción real de
-            alimentos con principios de agroecología, regeneración del
-            suelo y adaptación al contexto mediterráneo.
+            Sostiene la produccion real. Es la capa donde se cultiva, se
+            maneja el suelo y se asumen las consecuencias de cada decision.
           </div>
         </div>
         <div class="card card-accent">
-          <div class="card-label">Investigación aplicada</div>
+          <div class="card-label">Capa experimental</div>
           <div class="card-title">Viriato Living Lab</div>
           <div class="card-body">
-            Un laboratorio vivo integrado en la propia finca.
-            Sensorización, experimentación agronómica y modelos basados
-            en datos. Lo que aprendemos aquí tiene que servir en otras
-            fincas.
+            Convierte la finca en entorno de investigacion aplicada para
+            sensorizacion, modelado y validacion en campo.
           </div>
         </div>
         <div class="card card-accent">
-          <div class="card-label">Herramienta digital</div>
+          <div class="card-label">Capa de producto</div>
           <div class="card-title">MindFarm</div>
           <div class="card-body">
-            La plataforma que convierte datos del campo en información
-            útil. Monitorización, recomendación de riego, analítica
-            agronómica. Pensada para el agricultor.
+            Traduce datos y aprendizaje en decision operativa. No es un anadido
+            ornamental: es la herramienta que aterriza el sistema.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- POR QUÉ AHORA -->
   <section class="section">
     <div class="container">
-      <h2>Por qué ahora</h2>
-      <p class="mt-2">
-        El cambio climático ya es una realidad en el campo: primaveras más
-        cortas, veranos más secos, suelos que cada año cuesta más recuperar.
-        La pequeña explotación no tiene margen de error. Y sin embargo, la
-        mayoría de herramientas de agricultura de precisión siguen diseñadas
-        para otra escala.
-      </p>
-      <p>
-        Hoy existen sensores asequibles, modelos agronómicos consolidados
-        (FAO-56) y APIs meteorológicas abiertas. Lo que faltaba era alguien
-        que lo juntase desde una finca real, no desde un despacho.
-      </p>
-    </div>
-  </section>
-
-  <!-- PARA QUIÉN -->
-  <section class="section">
-    <div class="container">
-      <h2>Para quién</h2>
-      <div class="grid grid-3 mt-3">
+      <h2>A quien quiere servir</h2>
+      <div class="grid grid-2 mt-3">
         <div class="card">
-          <div class="card-title">Pequeñas explotaciones</div>
+          <div class="card-title">Pequenas explotaciones</div>
           <div class="card-body">
-            Agricultores que quieren tomar decisiones con más información
-            sin necesitar un equipo técnico. Si puedes mirar el móvil,
-            puedes usar MindFarm.
+            Fincas que necesitan decidir mejor sin depender de herramientas
+            pensadas para otra escala o para equipos tecnicos especializados.
           </div>
         </div>
         <div class="card">
-          <div class="card-title">Instituciones e investigadores</div>
+          <div class="card-title">Instituciones y proyectos</div>
           <div class="card-body">
-            Infraestructura real para validar hipótesis, colaborar en I+D
-            y generar datos publicables. El campo como laboratorio.
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">Innovación agraria</div>
-          <div class="card-body">
-            Profesionales interesados en una forma distinta de hacer
-            agricultura de precisión: abierta, aplicada, construida
-            desde abajo.
+            Actores que buscan infraestructura de validacion en campo,
+            transferencia tecnologica y colaboracion sobre problemas reales.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DÓNDE -->
   <section class="section">
     <div class="container">
-      <h2>Dónde</h2>
+      <h2>Dos territorios, un mismo marco</h2>
       <div class="grid grid-2 mt-3">
         <div class="card card-accent-brown">
-          <div class="card-label">Cáceres</div>
+          <div class="card-label">Desarrollo territorial</div>
           <div class="card-title">Sierra de Gata</div>
           <div class="card-body">
-            Castaño y ganadería extensiva. Dehesa y monte mediterráneo
-            con vocación regenerativa.
+            Territorio clave para las lineas de trabajo en castano y olivar,
+            y para el desarrollo agronomico del proyecto.
           </div>
         </div>
         <div class="card card-accent">
-          <div class="card-label">Granada</div>
-          <div class="card-title">Valle de Lecrín</div>
+          <div class="card-label">Despliegue operativo</div>
+          <div class="card-title">Padul</div>
           <div class="card-body">
-            Olivar y huerta. Primer banco de pruebas operativo con
-            sensorización activa y gemelo digital en producción.
+            Banco activo de despliegue y aprendizaje, con lectura continua en
+            campo y gemelo digital MVP en funcionamiento.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRINCIPIOS -->
   <section class="section">
     <div class="container">
       <h2>Principios</h2>
       <div class="mt-3">
-        <p><strong>Código abierto.</strong> Todo el desarrollo — hardware, software, metodología — es replicable y auditable.</p>
-        <p><strong>Validación en campo.</strong> Nada sale de aquí sin haber funcionado primero en una finca real.</p>
-        <p><strong>Tecnología accesible.</strong> Si solo funciona para quien puede pagar un equipo de ingenieros, no nos sirve.</p>
-        <p><strong>Ciencia aplicada.</strong> Nos apoyamos en estándares consolidados (FAO-56, Penman-Monteith) y en investigación publicada.</p>
+        <p><strong>Campo real antes que promesa.</strong> Nada se sostiene aqui si no resiste el contexto real de una finca.</p>
+        <p><strong>Conocimiento aplicado antes que retorica.</strong> La investigacion importa porque ayuda a decidir mejor.</p>
+        <p><strong>Herramienta util antes que complejidad gratuita.</strong> Si no aterriza en una decision clara, sobra.</p>
+        <p><strong>Tecnologia accesible antes que dependencia opaca.</strong> La precision tiene sentido si puede servir a pequena escala.</p>
       </div>
       <div class="pullquote">
-        <p>Si funciona aquí, puede funcionar en cualquier campo.</p>
+        <p>Producir, experimentar y decidir mejor no son tres proyectos distintos. Son tres funciones del mismo sistema.</p>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section">
     <div class="container text-center">
       <div class="btn-group" style="justify-content:center;">
         <a href={`${base}living-lab/`} class="btn btn-secondary">Living Lab</a>
-        <a href="https://mindfarm-demo.streamlit.app" class="btn btn-primary" target="_blank">
-          Entrar en MindFarm
+        <a href={`${base}mindfarm/`} class="btn btn-secondary">MindFarm</a>
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Entrar en la herramienta
         </a>
       </div>
     </div>
   </section>
-
 </BaseLayout>

@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Viriato - MindFarm"
+  description="MindFarm es el producto digital nacido dentro de Viriato Living Lab para convertir datos del suelo en decisiones operativas."
+>
+  <section class="hero-page">
+    <div class="container">
+      <div class="eyebrow">MindFarm</div>
+      <h1>Agricultura de precision para decidir mejor en campo real</h1>
+      <p class="subtitle">
+        MindFarm es el producto digital nacido dentro de Viriato Living Lab.
+        Convierte datos de suelo, clima y manejo en una lectura operativa de
+        la finca: que esta pasando, que puede pasar y que decision conviene
+        tomar hoy.
+      </p>
+      <div class="btn-group">
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Entrar en MindFarm
+        </a>
+        <a href={`${base}living-lab/`} class="btn btn-secondary">Entender el Living Lab</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>No solo ver datos. Entender que hacer con ellos</h2>
+      <p class="mt-2">
+        MindFarm no esta pensado como un dashboard para mirar por curiosidad.
+        Esta pensado como una herramienta de interpretacion y apoyo a la
+        decision para pequenas explotaciones que necesitan mas claridad y
+        menos intuicion ciega.
+      </p>
+      <div class="grid grid-2 mt-3">
+        <div class="card card-accent">
+          <div class="card-title">Que problema resuelve</div>
+          <div class="card-body">
+            Muchas fincas trabajan con poca visibilidad sobre el estado hidrico
+            real del suelo, con decisiones de riego apoyadas en experiencia,
+            calendario o senales demasiado tardias. MindFarm busca reducir esa
+            zona ciega con una lectura mas clara del sistema.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-title">Para quien existe</div>
+          <div class="card-body">
+            Para pequenas explotaciones que necesitan decidir mejor sin
+            depender de herramientas pensadas para otra escala o para equipos
+            tecnicos especializados.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Un gemelo digital util, no un buzzword</h2>
+      <p class="mt-2">
+        Aqui "gemelo digital" no significa una copia futurista de la finca.
+        Significa una representacion operativa de su estado hidrico y
+        agronomico que combina datos reales del suelo, meteorologia, reglas
+        agronomicas y escenarios de decision.
+      </p>
+      <div class="flow mt-3">
+        <div class="flow-steps">
+          <strong>Suelo</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>Meteorologia</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>Modelo FAO-56</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>Escenarios</strong>
+          <span class="arrow">&rarr;</span>
+          <strong>Decision</strong>
+        </div>
+        <div class="flow-caption">
+          Del dato a una lectura operativa que ayuda a decidir mejor
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Que puede hacer hoy</h2>
+      <div class="grid grid-2 mt-3">
+        <div class="card card-accent">
+          <div class="card-label">Capacidad 1</div>
+          <div class="card-title">Monitorizacion</div>
+          <div class="card-body">
+            Lectura continua de variables de suelo para entender mejor el
+            estado de la finca y no depender solo de observacion tardia.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-label">Capacidad 2</div>
+          <div class="card-title">Recomendacion de riego</div>
+          <div class="card-body">
+            Una lectura mas clara de cuando conviene regar, cuanto y por que,
+            apoyada en balance hidrico y proyeccion.
+          </div>
+        </div>
+        <div class="card card-accent">
+          <div class="card-label">Capacidad 3</div>
+          <div class="card-title">Analitica derivada</div>
+          <div class="card-body">
+            Integracion de contexto meteorologico y logica agronomica basada
+            en FAO-56 para interpretar mejor lo que ocurre en campo.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-label">Capacidad 4</div>
+          <div class="card-title">Proyeccion tipo gemelo digital</div>
+          <div class="card-body">
+            Escenarios de evolucion que ayudan a anticipar y no solo a mirar
+            el estado actual de la parcela.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Sostenibilidad y rentabilidad con mecanismo, no con eslogan</h2>
+      <div class="grid grid-2 mt-3">
+        <div class="card">
+          <div class="card-title">Menos agua mal aplicada</div>
+          <div class="card-body">
+            La sostenibilidad aqui no se apoya en retorica verde. Se apoya en
+            regar con mas criterio, leer mejor el riesgo y reducir decisiones
+            tomadas a ciegas.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Decisiones mas claras</div>
+          <div class="card-body">
+            El valor del producto no esta en mostrar muchas variables, sino en
+            ayudar a convertirlas en una accion comprensible.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Aprendizaje acumulado</div>
+          <div class="card-body">
+            Registrar lo que ocurre permite aprender temporada tras temporada y
+            no empezar de cero en cada campana.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Potencial economico prudente</div>
+          <div class="card-body">
+            La promesa economica no debe sonar a ROI magico. Debe presentarse
+            como mejor uso de recursos, menos error y mas capacidad de decidir
+            con criterio.
+          </div>
+        </div>
+      </div>
+      <p class="muted mt-2">
+        Las cifras de ahorro deben presentarse como estimaciones o benchmarks
+        hasta disponer de validacion propia suficiente.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Que esta operativo y que esta en evolucion</h2>
+      <div class="grid grid-2 mt-3">
+        <div class="card card-accent">
+          <div class="card-label">Hoy</div>
+          <div class="card-title">MVP operativo</div>
+          <div class="card-body">
+            MindFarm ya funciona como MVP operativo para monitorizacion y
+            decision de riego en el despliegue activo de Padul.
+          </div>
+        </div>
+        <div class="card card-accent-brown">
+          <div class="card-label">En evolucion</div>
+          <div class="card-title">Escalado y validacion</div>
+          <div class="card-body">
+            Quedan por delante la ampliacion multi-finca, nuevas lineas de
+            cultivo, mas validacion local y nuevas capas de interpretacion.
+          </div>
+        </div>
+      </div>
+      <div class="pullquote">
+        <p>MindFarm no nace en una demo. Nace dentro de una finca real y de una infraestructura de investigacion aplicada.</p>
+      </div>
+      <div class="btn-group">
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Entrar en MindFarm
+        </a>
+        <a href={`${base}proyecto/`} class="btn btn-secondary">Volver al proyecto</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
