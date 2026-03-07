@@ -4,113 +4,202 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Viriato - El Proyecto"
-  description="Explotacion real, investigacion aplicada y herramienta digital en un mismo sistema."
+  title="Viriato - Del campo a la herramienta"
+  description="Una cooperativa que genera valor territorial desde producción real, investigación aplicada y herramienta digital para pequeña escala."
 >
-  <section class="hero-page">
-    <div class="container">
-      <div class="eyebrow">El proyecto</div>
-      <h1>No construimos tecnologia para el campo desde fuera del campo</h1>
-      <p class="subtitle">
-        Viriato nace para demostrar que una pequena explotacion puede ser al
-        mismo tiempo sistema productivo, infraestructura de investigacion
-        aplicada y origen de una herramienta digital util.
-      </p>
+  <section class="hero-page hero-page-project">
+    <div class="container hero-project-grid">
+      <div>
+        <div class="eyebrow">El proyecto</div>
+        <h1>Cómo Viriato convierte una finca real en un sistema de valor territorial</h1>
+        <p class="subtitle">
+          Este proyecto articula cooperativa, living lab y herramienta digital
+          para que la innovación agraria no quede separada del campo. La idea
+          es producir, investigar y transferir conocimiento útil desde el
+          territorio para sostener actividad, autonomía y futuro rural.
+        </p>
+      </div>
+      <aside class="hero-project-note">
+        <div class="card-label">Qué une</div>
+        <p>
+          Producción real, investigación abierta y conocimiento aplicado dentro de un
+          mismo ciclo de aprendizaje.
+        </p>
+        <div class="status-strip">
+          <span class="status-chip status-chip-operational">Valor territorial</span>
+          <span class="status-chip status-chip-active">Investigación abierta</span>
+          <span class="status-chip status-chip-rd">Conocimiento aplicado</span>
+        </div>
+      </aside>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>Por que existe ahora</h2>
+      <h2>Por qué importa ahora</h2>
       <p class="mt-2">
-        El problema no es solo tecnologico. Es de escala, de contexto y de
-        acceso. Las pequenas fincas necesitan herramientas mas claras, mas
-        asequibles y mas arraigadas en su realidad material.
+        En el contexto actual y de futuro del sector agrario, decidir mejor con
+        menos margen de error será cada vez más importante: sequías más
+        frecuentes, presión hídrica creciente y costes al alza obligan a afinar
+        el manejo.
       </p>
       <p>
-        Viriato existe para juntar tres capas que normalmente aparecen
-        separadas: la explotacion real, la investigacion aplicada y la
-        herramienta digital.
+        Sin embargo, gran parte de las soluciones actuales siguen fuera del
+        alcance de la pequeña escala por precio, complejidad y dependencia de
+        soporte especializado.
+      </p>
+      <p>
+        El reto, además, no es solo técnico. También es territorial: si la
+        innovación no mejora la viabilidad de quienes trabajan el campo, no
+        revaloriza el entorno ni abre posibilidades de continuidad, se queda en
+        promesa. Viriato nace para aterrizar esa innovación en utilidad real,
+        aprendizaje compartible y futuro productivo.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>Tres capas, un solo sistema</h2>
+      <h2>Nuestro diferencial es la unificación</h2>
       <p class="mt-2 mb-3">
-        Cada capa responde a una necesidad distinta: producir, experimentar y
-        decidir mejor.
+        En muchos sitios, producción, investigación y herramienta digital viven
+        separadas. Aquí no. La finca plantea preguntas reales, el living lab
+        las convierte en medición y modelo, y MindFarm devuelve una lectura
+        operativa que queda registrada para seguir aprendiendo.
       </p>
-      <div class="grid grid-3 mt-3">
-        <div class="card card-accent-brown">
-          <div class="card-label">Base productiva</div>
-          <div class="card-title">Viriato Agropecuaria</div>
-          <div class="card-body">
-            Sostiene la produccion real. Es la capa donde se cultiva, se
-            maneja el suelo y se asumen las consecuencias de cada decision.
-          </div>
+      <p class="mb-3">
+        Esa continuidad importa porque evita que la investigación quede aislada
+        y que la tecnología se diseñe lejos de la práctica. Lo que se prueba,
+        se contrasta en campo; lo que funciona, se incorpora a la herramienta;
+        y lo que no, deja una lección útil para la siguiente campaña.
+      </p>
+      <div class="diagram-panel mb-3">
+        <div class="diagram-copy">
+          <div class="card-label">Cómo circula el aprendizaje</div>
+          <p>
+            Lo importante no es tener tres piezas separadas, sino un sistema
+            donde cada campaña alimenta la siguiente y convierte experiencia en
+            criterio replicable.
+          </p>
+          <p>
+            Esa unificación es la que permite pasar de la intuición dispersa a
+            un conocimiento que se puede aplicar, revisar y compartir.
+          </p>
         </div>
-        <div class="card card-accent">
-          <div class="card-label">Capa experimental</div>
-          <div class="card-title">Viriato Living Lab</div>
-          <div class="card-body">
-            Convierte la finca en entorno de investigacion aplicada para
-            sensorizacion, modelado y validacion en campo.
+        <figure class="diagram-figure">
+          <img
+            src={`${base}project-cycle.svg`}
+            alt="Esquema ilustrado del ciclo del proyecto: pregunta de finca, validación, registro, decisión, transferencia y aprendizaje compartido conectados en un sistema integrado."
+            loading="lazy"
+          />
+        </figure>
+      </div>
+      <div class="project-flow mt-3">
+        <article class="project-stage project-stage-earth">
+          <div class="project-stage-index">01</div>
+          <div class="project-stage-copy">
+            <div class="project-stage-label">Se produce</div>
+            <h3>Viriato Agropecuaria</h3>
+            <p>
+              La finca cooperativa donde se cultiva y se asumen consecuencias
+              reales en cada campaña. Aquí las decisiones tienen impacto directo
+              sobre agua, costes, trabajo y continuidad.
+            </p>
           </div>
-        </div>
-        <div class="card card-accent">
-          <div class="card-label">Capa de producto</div>
-          <div class="card-title">MindFarm</div>
-          <div class="card-body">
-            Traduce datos y aprendizaje en decision operativa. No es un anadido
-            ornamental: es la herramienta que aterriza el sistema.
+        </article>
+        <article class="project-stage project-stage-green">
+          <div class="project-stage-index">02</div>
+          <div class="project-stage-copy">
+            <div class="project-stage-label">Se valida</div>
+            <h3>Viriato Living Lab</h3>
+            <p>
+              El entorno donde sensores, modelos y criterios se contrastan en
+              condiciones reales. La experimentación no ocurre al margen de la
+              finca, sino dentro de su operación.
+            </p>
           </div>
-        </div>
+        </article>
+        <article class="project-stage project-stage-blue">
+          <div class="project-stage-index">03</div>
+          <div class="project-stage-copy">
+            <div class="project-stage-label">Se transfiere</div>
+            <h3>MindFarm</h3>
+            <p>
+              La herramienta que convierte el aprendizaje en decisiones
+              operativas consultables y accionables para pequeñas explotaciones.
+            </p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>A quien quiere servir</h2>
-      <div class="grid grid-2 mt-3">
-        <div class="card">
-          <div class="card-title">Pequenas explotaciones</div>
-          <div class="card-body">
-            Fincas que necesitan decidir mejor sin depender de herramientas
-            pensadas para otra escala o para equipos tecnicos especializados.
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">Instituciones y proyectos</div>
-          <div class="card-body">
-            Actores que buscan infraestructura de validacion en campo,
-            transferencia tecnologica y colaboracion sobre problemas reales.
-          </div>
-        </div>
-      </div>
+      <h2>Por qué ser cooperativa importa</h2>
+      <p class="mt-2">
+        Ser cooperativa significa gobernar el sistema desde necesidades reales
+        del territorio y de quienes trabajan el campo. Aquí la tecnología no se
+        diseña para capturar datos: se diseña para devolver criterio y
+        autonomía a la decisión agraria.
+      </p>
+      <p>
+        El enfoque regenerativo y ecológico no es un eslogan: se concreta en
+        salud del suelo, gestión del agua, resiliencia productiva y viabilidad
+        económica.
+      </p>
+      <p>
+        Revalorizar territorio también significa demostrar que la innovación
+        puede quedarse cerca y dejar algo más que una prueba puntual: capacidad
+        técnica, aprendizaje útil, actividad económica y una alternativa de
+        futuro para quienes quieren seguir vinculados al campo.
+      </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>Dos territorios, un mismo marco</h2>
+      <h2>Investigación abierta, utilidad compartida</h2>
+      <p class="mt-2">
+        Queremos que lo aprendido no se quede encerrado dentro del proyecto. Si
+        una metodología, una hipótesis o una herramienta solo sirve para una
+        finca concreta y no se documenta, su valor territorial se limita.
+      </p>
+      <p>
+        Por eso Viriato trabaja la investigación aplicada con vocación abierta:
+        medir, contrastar, documentar y compartir para que otras fincas,
+        cooperativas, investigadores o agentes del territorio puedan apoyarse
+        en esa base, adaptarla y mejorarla.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Dos territorios, un mismo marco de trabajo</h2>
+      <p class="mt-2">
+        No buscamos replicar un decorado, sino aplicar una misma lógica de
+        trabajo en contextos distintos: escuchar el territorio, medir mejor,
+        validar en campo y devolver herramientas o criterios que puedan ser
+        útiles allí donde se necesitan.
+      </p>
       <div class="grid grid-2 mt-3">
         <div class="card card-accent-brown">
           <div class="card-label">Desarrollo territorial</div>
           <div class="card-title">Sierra de Gata</div>
           <div class="card-body">
-            Territorio clave para las lineas de trabajo en castano y olivar,
-            y para el desarrollo agronomico del proyecto.
+            Líneas de trabajo y desarrollo agronómico en castaño y olivar,
+            conectadas con transferencia territorial y con preguntas de manejo
+            que pueden devolver valor al entorno.
           </div>
         </div>
         <div class="card card-accent">
           <div class="card-label">Despliegue operativo</div>
-          <div class="card-title">Padul</div>
+          <div class="card-title">Valle de Lecrín, Granada</div>
           <div class="card-body">
-            Banco activo de despliegue y aprendizaje, con lectura continua en
-            campo y gemelo digital MVP en funcionamiento.
+            Banco activo de aprendizaje con lectura continua en campo y gemelo
+            digital MVP en funcionamiento, donde la validación se convierte en
+            herramienta consultable.
           </div>
         </div>
       </div>
@@ -119,31 +208,19 @@ const base = import.meta.env.BASE_URL;
 
   <section class="section">
     <div class="container">
-      <h2>Principios</h2>
-      <div class="mt-3">
-        <p><strong>Campo real antes que promesa.</strong> Nada se sostiene aqui si no resiste el contexto real de una finca.</p>
-        <p><strong>Conocimiento aplicado antes que retorica.</strong> La investigacion importa porque ayuda a decidir mejor.</p>
-        <p><strong>Herramienta util antes que complejidad gratuita.</strong> Si no aterriza en una decision clara, sobra.</p>
-        <p><strong>Tecnologia accesible antes que dependencia opaca.</strong> La precision tiene sentido si puede servir a pequena escala.</p>
-      </div>
       <div class="pullquote">
-        <p>Producir, experimentar y decidir mejor no son tres proyectos distintos. Son tres funciones del mismo sistema.</p>
+        <p>Producir, investigar y compartir conocimiento desde el campo puede convertirse en una alternativa de futuro para el territorio.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container text-center">
-      <div class="btn-group" style="justify-content:center;">
-        <a href={`${base}living-lab/`} class="btn btn-secondary">Living Lab</a>
-        <a href={`${base}mindfarm/`} class="btn btn-secondary">MindFarm</a>
+      <div class="btn-group">
+        <a href={`${base}living-lab/`} class="btn btn-secondary">Ver Living Lab</a>
+        <a href={`${base}mindfarm/`} class="btn btn-secondary">Ver MindFarm</a>
         <a
           href="https://mindfarm-demo.streamlit.app"
           class="btn btn-primary"
           target="_blank"
           rel="noreferrer"
         >
-          Entrar en la herramienta
+          Acceder a la herramienta
         </a>
       </div>
     </div>
