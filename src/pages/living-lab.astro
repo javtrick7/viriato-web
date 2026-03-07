@@ -10,22 +10,35 @@ const base = import.meta.env.BASE_URL;
   <section class="hero-page">
     <div class="container">
       <div class="eyebrow">Living Lab</div>
-      <h1>Investigación aplicada que pisa suelo real</h1>
+      <h1>Investigación aplicada para el mundo real</h1>
       <p class="subtitle">
         Un living lab es innovación en entorno real, centrada en usuarios y
-        basada en co-creación. En Viriato, el usuario no es abstracto: es la
-        finca y las personas que deciden cada día.
+        basada en co-creación. En Viriato, ese entorno no es abstracto: es la
+        finca y las personas que toman decisiones cada día.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>No es un showroom. Es un marco de experimentación con decisiones reales</h2>
+      <h2>La investigación aquí ocurre dentro del trabajo real de la finca</h2>
       <p class="mt-2">
-        Aquí se trabaja con restricciones reales de tiempo, costes y clima.
-        Cada hipótesis se contrasta en campo; lo que no aporta utilidad
-        operativa, se descarta.
+        El living lab de Viriato no funciona como una capa separada del resto
+        del proyecto. La producción, la observación y la validación conviven en
+        el mismo sistema, con los mismos límites de agua, tiempo, clima y
+        capacidad operativa que condicionan cualquier decisión agraria real.
+      </p>
+      <p>
+        Eso cambia la lógica de trabajo. Aquí no se ensaya para demostrar un
+        concepto en abstracto, sino para comprobar si una hipótesis mejora
+        realmente la lectura del campo, si una herramienta ayuda a decidir con
+        más claridad y si una recomendación se sostiene cuando entra en contacto
+        con el ritmo de la finca.
+      </p>
+      <p>
+        Por eso el valor del living lab no está solo en medir, sino en filtrar.
+        Lo que aporta criterio operativo se consolida. Lo que no resiste el
+        contraste con la práctica diaria, se corrige o se descarta.
       </p>
     </div>
   </section>
@@ -68,74 +81,101 @@ const base = import.meta.env.BASE_URL;
 
   <section class="section">
     <div class="container">
-      <h2>Qué se valida hoy</h2>
-      <div class="grid grid-3 mt-3">
-        <div class="card card-accent">
-          <div class="card-title">Datos continuos en campo</div>
-          <div class="card-body">
-            Monitorización con lectura periódica para no depender de campañas
-            puntuales.
-          </div>
-        </div>
-        <div class="card card-accent-brown">
-          <div class="card-title">Modelos agronómicos</div>
-          <div class="card-body">
-            Modelado hídrico con FAO-56 para traducir datos en criterio de
-            decisión.
-          </div>
-        </div>
-        <div class="card card-accent">
-          <div class="card-title">Recomendaciones comprensibles</div>
-          <div class="card-body">
-            Formatos de salida útiles para quien decide en campo, no solo para
-            perfiles técnicos.
-          </div>
-        </div>
-      </div>
-      <div class="grid grid-3 mt-3">
-        <div class="metric">
-          <div class="metric-value">15 min</div>
-          <div class="metric-label">lectura</div>
-          <div class="metric-detail">monitorización continua en campo</div>
-        </div>
-        <div class="metric">
-          <div class="metric-value">FAO-56</div>
-          <div class="metric-label">modelo</div>
-          <div class="metric-detail">base del gemelo digital MVP</div>
-        </div>
-        <div class="metric">
-          <div class="metric-value">Padul</div>
-          <div class="metric-label">despliegue</div>
-          <div class="metric-detail">operativo en entorno real</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
       <h2>Qué entrega este living lab</h2>
       <p class="mt-2">
         El objetivo no es acumular datos. Es generar conocimiento replicable:
         reglas, modelos, aprendizajes y una herramienta que otras pequeñas
         explotaciones puedan usar sin depender de un equipo técnico propio.
       </p>
-      <div class="flow mt-3">
-        <div class="flow-steps">
-          <strong>Sensor RS485</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>LoRa</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>RPi</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>InfluxDB</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>FAO-56</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>Decisión</strong>
+      <p>
+        Eso implica validar lectura continua en campo, criterio agronómico y
+        formas de devolver esa información de manera comprensible para quien
+        decide en la práctica diaria.
+      </p>
+      <div class="diagram-panel mt-3">
+        <div class="diagram-copy">
+          <div class="card-label">Del sensor a la herramienta</div>
+          <p>
+            El flujo técnico recoge lectura en campo, la ordena, la interpreta
+            y devuelve criterio útil. Esa cadena es la que permite validar si
+            una decisión es comprensible y operativa de verdad.
+          </p>
+          <p>
+            No es solo infraestructura de datos: es una arquitectura de prueba
+            para convertir observación en producto utilizable.
+          </p>
         </div>
-        <div class="flow-caption">
-          Pipeline técnico actual: lectura cada 15 min, procesamiento automatizado y recomendación diaria.
+        <figure class="diagram-figure">
+          <img
+            src={`${base}living-lab-pipeline-alt.svg`}
+            alt="Esquema ilustrado del Living Lab: finca real, ensayo, living lab, herramienta y transferencia conectados en un flujo de validación."
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Líneas activas de investigación</h2>
+      <p class="mt-2">
+        El living lab no es solo infraestructura: es una cartera activa de
+        validación en cultivos y sistemas complementarios conectados con la
+        cooperativa y el territorio.
+      </p>
+      <div class="grid grid-2 mt-3">
+        <div class="card card-accent research-card visual-card visual-card-green">
+          <div class="card-label">Despliegue actual</div>
+          <div class="status-strip status-strip-tight">
+            <span class="status-chip status-chip-operational">Piloto operativo</span>
+          </div>
+          <div class="card-title">Valle de Lecrín, Granada</div>
+          <div class="card-body">
+            Huerta monitorizada y recomendación de riego donde validamos
+            decisiones reales en campo.
+          </div>
+        </div>
+        <div class="card card-accent-brown research-card visual-card visual-card-water">
+          <div class="card-label">Sierra de Gata</div>
+          <div class="status-strip status-strip-tight">
+            <span class="status-chip status-chip-active">Monitorización activa</span>
+          </div>
+          <div class="card-title">Olivo</div>
+          <div class="card-body">
+            Seguimiento en campo para ampliar lectura agronómica y aprender cómo
+            adaptar la lógica del sistema a nuevas condiciones de cultivo.
+          </div>
+        </div>
+        <div class="card card-accent research-card visual-card visual-card-earth">
+          <div class="card-label">Sierra de Gata</div>
+          <div class="status-strip status-strip-tight">
+            <span class="status-chip status-chip-rd">I+D+i en arranque</span>
+          </div>
+          <div class="card-title">Castaño</div>
+          <div class="card-body">
+            Estudiamos estrategias de RDI en castaño para adaptar el manejo del
+            riego a este cultivo sobre una base ya contrastada.
+          </div>
+          <div class="card-note">
+            Referencias: Nieto Serrano, E. et al. (2021). <em>Estudio de las
+            necesidades hídricas del castaño (Castanea sativa Mill.)</em>.
+            CICYTEX; Tsoulias, N. et al. (2025). <em>Physiological and
+            Productive Characteristics of Castanea sativa Mill. Under
+            Irrigation Regimes in Mediterranean Region</em>. <em>Water</em>,
+            17(23), 3393.
+          </div>
+        </div>
+        <div class="card card-accent-brown research-card visual-card visual-card-gold">
+          <div class="card-label">Cooperativa y territorio</div>
+          <div class="status-strip status-strip-tight">
+            <span class="status-chip status-chip-exploration">Exploración aplicada</span>
+          </div>
+          <div class="card-title">Forraje verde hidropónico</div>
+          <div class="card-body">
+            Exploramos su potencial para cerrar ciclos dentro de la cooperativa
+            y como alternativa útil para ganaderos de la zona.
+          </div>
         </div>
       </div>
     </div>
@@ -147,7 +187,7 @@ const base = import.meta.env.BASE_URL;
         <p>El living lab no termina en los datos: alimenta decisiones y producto útil.</p>
       </div>
       <div class="btn-group">
-        <a href={`${base}mindfarm/`} class="btn btn-primary">Ver MindFarm</a>
+        <a href={`${base}mindfarm/`} class="btn btn-primary">Explorar MindFarm</a>
         <a href={`${base}colaboraciones/`} class="btn btn-secondary">Proponer colaboración</a>
       </div>
     </div>

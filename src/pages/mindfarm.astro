@@ -12,11 +12,15 @@ const base = import.meta.env.BASE_URL;
       <div class="eyebrow">MindFarm</div>
       <h1>Agricultura de precisión accesible para decidir mejor en campo real</h1>
       <p class="subtitle">
-        MindFarm es el producto digital nacido dentro de Viriato Living Lab.
-        Convierte datos de suelo, clima y manejo en una lectura operativa de
-        la finca: qué está pasando, qué puede pasar y qué decisión conviene
-        tomar hoy.
+        MindFarm es la herramienta digital nacida dentro de Viriato Living Lab.
+        Convierte datos de suelo, clima y manejo en una lectura operativa de la
+        finca: qué está pasando, qué puede pasar y qué decisión conviene tomar
+        hoy. Ya está operativa en un piloto del Valle de Lecrín, Granada, y se
+        puede consultar.
       </p>
+      <div class="status-strip status-strip-light">
+        <span class="status-chip status-chip-light">Piloto operativo · Valle de Lecrín, Granada</span>
+      </div>
       <div class="btn-group">
         <a
           href="https://mindfarm-demo.streamlit.app"
@@ -24,7 +28,7 @@ const base = import.meta.env.BASE_URL;
           target="_blank"
           rel="noreferrer"
         >
-          Entrar en MindFarm
+          Acceder a la herramienta
         </a>
         <a href={`${base}living-lab/`} class="btn btn-secondary">Entender el Living Lab</a>
       </div>
@@ -52,7 +56,7 @@ const base = import.meta.env.BASE_URL;
           <div class="card-title">Para quién existe</div>
           <div class="card-body">
             Para pequeñas explotaciones que necesitan agricultura de precisión
-            sin asumir costes ni complejidad diseñados para otra escala.
+            sin asumir costes ni complejidad muy elevados.
           </div>
         </div>
       </div>
@@ -61,32 +65,47 @@ const base = import.meta.env.BASE_URL;
 
   <section class="section">
     <div class="container">
-      <h2>Qué es un gemelo digital, explicado en llano</h2>
+      <h2>Qué es un gemelo digital</h2>
       <p class="mt-2">
-        Un gemelo digital es un modelo que representa una finca y se mantiene
-        sincronizado con datos reales. Sirve para estimar el estado actual y
-        simular escenarios de decisión.
+        Un gemelo digital es una representación dinámica de la finca que se
+        mantiene actualizada con datos reales. No es solo un panel con números:
+        organiza la información de suelo, clima y cultivo para ofrecer una
+        lectura útil de lo que está ocurriendo y de lo que puede pasar a corto
+        plazo.
       </p>
       <p>
-        Ejemplo práctico: hoy el suelo parece estable, pero el modelo estima
-        que, si no riegas en 48 horas con esta meteorología, puedes entrar en
-        estrés hídrico. La recomendación se convierte en acción concreta.
+        Su valor está en que no se limita a describir el presente. También
+        ayuda a anticipar escenarios y a convertir señales dispersas en
+        criterio de manejo: cuándo conviene regar, cuándo esperar y dónde hay
+        que mirar con más atención.
       </p>
-      <div class="flow mt-3">
-        <div class="flow-steps">
-          <strong>Suelo</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>Meteorología</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>Modelo FAO-56</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>Escenarios</strong>
-          <span class="arrow">&rarr;</span>
-          <strong>Decisión</strong>
+      <p>
+        Por ejemplo, una parcela puede mostrar una humedad aparentemente
+        aceptable hoy y, aun así, estar acercándose a una situación de estrés
+        si coinciden varios días de alta demanda atmosférica y poca reserva
+        útil en el suelo. El gemelo digital detecta esa tendencia antes de que
+        el problema sea evidente en campo y la traduce en una recomendación
+        concreta.
+      </p>
+      <div class="diagram-panel mt-3">
+        <div class="diagram-copy">
+          <div class="card-label">Cómo se convierte en criterio</div>
+          <p>
+            La herramienta combina lectura de suelo, contexto meteorológico y
+            lógica agronómica para dibujar una imagen operativa de la finca.
+          </p>
+          <p>
+            No se limita a mostrar variables: las traduce en lectura,
+            escenarios y recomendación accionable para quien decide en campo.
+          </p>
         </div>
-        <div class="flow-caption">
-          El modelo se apoya en FAO-56 para traducir datos en criterio operativo.
-        </div>
+        <figure class="diagram-figure">
+          <img
+            src={`${base}mindfarm-diagram.svg`}
+            alt="Esquema ilustrado de MindFarm: suelo, clima y manejo alimentan un modelo que genera lectura operativa, escenarios y recomendación."
+            loading="lazy"
+          />
+        </figure>
       </div>
     </div>
   </section>
@@ -95,7 +114,7 @@ const base = import.meta.env.BASE_URL;
     <div class="container">
       <h2>Capacidades actuales</h2>
       <div class="grid grid-2 mt-3">
-        <div class="card card-accent">
+        <div class="card card-accent visual-card visual-card-green">
           <div class="card-label">Capacidad 1</div>
           <div class="card-title">Monitorización</div>
           <div class="card-body">
@@ -103,7 +122,7 @@ const base = import.meta.env.BASE_URL;
             la finca sin esperar señales tardías.
           </div>
         </div>
-        <div class="card card-accent-brown">
+        <div class="card card-accent-brown visual-card visual-card-water">
           <div class="card-label">Capacidad 2</div>
           <div class="card-title">Recomendación de riego</div>
           <div class="card-body">
@@ -111,15 +130,16 @@ const base = import.meta.env.BASE_URL;
             balance hídrico y proyección.
           </div>
         </div>
-        <div class="card card-accent">
+        <div class="card card-accent visual-card visual-card-blue">
           <div class="card-label">Capacidad 3</div>
-          <div class="card-title">Analítica derivada</div>
+          <div class="card-title">Alertas operativas</div>
           <div class="card-body">
-            Integración de contexto meteorológico y lógica agronómica para
-            convertir datos en lectura útil.
+            Sistema ya operativo de avisos cuando variables críticas salen de
+            umbrales definidos: pH, CE, temperatura de aire y suelo o rachas de
+            viento elevadas.
           </div>
         </div>
-        <div class="card card-accent-brown">
+        <div class="card card-accent-brown visual-card visual-card-gold">
           <div class="card-label">Capacidad 4</div>
           <div class="card-title">Escenarios de evolución</div>
           <div class="card-body">
@@ -128,6 +148,12 @@ const base = import.meta.env.BASE_URL;
           </div>
         </div>
       </div>
+      <p class="muted mt-2">
+        Hoy la recomendación de riego es el servicio principal, pero no el
+        único: MindFarm ya incorpora alertas por umbrales críticos y está
+        desarrollando nuevas capas de aviso para ampliar su capacidad
+        operativa.
+      </p>
     </div>
   </section>
 
@@ -175,24 +201,26 @@ const base = import.meta.env.BASE_URL;
       <h2>Qué está operativo y qué está en evolución</h2>
       <div class="grid grid-2 mt-3">
         <div class="card card-accent">
-          <div class="card-label">Hoy</div>
-          <div class="card-title">MVP operativo</div>
+          <div class="card-label">Piloto operativo</div>
+          <div class="card-title">Valle de Lecrín, Granada</div>
           <div class="card-body">
-            MindFarm funciona como MVP operativo para monitorización y decisión
-            de riego en el despliegue activo de Padul.
+            MindFarm funciona ya para monitorización, decisión de riego y
+            alertas cuando variables críticas se salen de rango, con una
+            versión consultable de la herramienta.
           </div>
         </div>
         <div class="card card-accent-brown">
           <div class="card-label">En evolución</div>
-          <div class="card-title">Escalado y validación</div>
+          <div class="card-title">Nuevas alertas, escalado y validación</div>
           <div class="card-body">
-            Quedan por delante la ampliación multi-finca, nuevas líneas de
-            cultivo y más validación local.
+            Estamos desarrollando un gestor de alertas por posibles plagas,
+            junto a la ampliación multi-finca, nuevas líneas de cultivo y más
+            validación local.
           </div>
         </div>
       </div>
       <div class="pullquote">
-        <p>MindFarm no nace en una demo: nace dentro de una finca real y de un living lab activo.</p>
+        <p>MindFarm no nace como concepto: nace dentro de una finca real y de un living lab activo.</p>
       </div>
       <div class="btn-group">
         <a
@@ -201,7 +229,7 @@ const base = import.meta.env.BASE_URL;
           target="_blank"
           rel="noreferrer"
         >
-          Entrar en MindFarm
+          Acceder a la herramienta
         </a>
         <a href={`${base}proyecto/`} class="btn btn-secondary">Volver al proyecto</a>
       </div>

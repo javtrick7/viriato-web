@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="42" y1="34" x2="716" y2="388" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F4EE"/>
+      <stop offset="1" stop-color="#EAF1EB"/>
+    </linearGradient>
+    <linearGradient id="core" x1="286" y1="124" x2="474" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D6B4F"/>
+      <stop offset="1" stop-color="#8B6F47"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="20" y="20" width="720" height="380" rx="28" fill="url(#bg)" stroke="#DDE5DD"/>
+  <circle cx="380" cy="210" r="86" fill="url(#core)"/>
+  <g text-anchor="middle" font-family="Inter, Arial, sans-serif">
+    <text x="380" y="196" fill="#FFFFFF" font-size="18" font-weight="700">Ciclo integrado</text>
+    <text x="380" y="220" fill="#EAF3ED" font-size="14">
+      <tspan x="380">producir + validar</tspan>
+      <tspan x="380" dy="20">+ transferir</tspan>
+    </text>
+  </g>
+
+  <path d="M184 144C222 92 286 62 380 62C474 62 542 92 576 144" stroke="#C3D4C6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M602 176C624 214 624 258 602 298" stroke="#C3D4C6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M576 330C536 364 474 382 380 382C286 382 222 364 184 330" stroke="#C3D4C6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M158 298C136 258 136 214 158 176" stroke="#C3D4C6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M570 136L588 144L572 154" fill="#C3D4C6"/>
+  <path d="M594 288L604 304L586 304" fill="#C3D4C6"/>
+  <path d="M190 322L174 334L170 314" fill="#C3D4C6"/>
+  <path d="M166 168L156 152L174 152" fill="#C3D4C6"/>
+
+  <g text-anchor="middle" font-family="Inter, Arial, sans-serif">
+    <rect x="108" y="112" width="134" height="72" rx="18" fill="#FFFFFF" stroke="#D8E0D7"/>
+    <text x="175" y="142" fill="#2A4D38" font-size="17" font-weight="700">Pregunta</text>
+    <text x="175" y="164" fill="#5A5A5A" font-size="12.5">
+      <tspan x="175">desde la finca</tspan>
+    </text>
+  </g>
+
+  <g text-anchor="middle" font-family="Inter, Arial, sans-serif">
+    <rect x="502" y="112" width="156" height="72" rx="18" fill="#FFFFFF" stroke="#D8E0D7"/>
+    <text x="580" y="142" fill="#2A4D38" font-size="17" font-weight="700">Validaci&#243;n</text>
+    <text x="580" y="164" fill="#5A5A5A" font-size="12.5">
+      <tspan x="580">m&#233;todo y contraste</tspan>
+    </text>
+  </g>
+
+  <g text-anchor="middle" font-family="Inter, Arial, sans-serif">
+    <rect x="536" y="282" width="158" height="72" rx="18" fill="#FFFFFF" stroke="#D8E0D7"/>
+    <text x="615" y="312" fill="#2A4D38" font-size="17" font-weight="700">Transferencia</text>
+    <text x="615" y="334" fill="#5A5A5A" font-size="12.5">
+      <tspan x="615">herramienta &#250;til</tspan>
+    </text>
+  </g>
+
+  <g text-anchor="middle" font-family="Inter, Arial, sans-serif">
+    <rect x="106" y="282" width="138" height="72" rx="18" fill="#FFFFFF" stroke="#D8E0D7"/>
+    <text x="175" y="312" fill="#2A4D38" font-size="17" font-weight="700">Decisi&#243;n</text>
+    <text x="175" y="334" fill="#5A5A5A" font-size="12.5">
+      <tspan x="175">acci&#243;n en campo</tspan>
+    </text>
+  </g>
+
+  <g text-anchor="middle" font-family="Inter, Arial, sans-serif">
+    <rect x="252" y="40" width="136" height="68" rx="18" fill="#FFFFFF" stroke="#D8E0D7"/>
+    <text x="320" y="69" fill="#2A4D38" font-size="17" font-weight="700">Registro</text>
+    <text x="320" y="90" fill="#5A5A5A" font-size="12.5">
+      <tspan x="320">memoria com&#250;n</tspan>
+    </text>
+  </g>
+
+  <g text-anchor="middle" font-family="Inter, Arial, sans-serif">
+    <rect x="360" y="318" width="172" height="68" rx="18" fill="#FFFFFF" stroke="#D8E0D7"/>
+    <text x="446" y="346" fill="#2A4D38" font-size="17" font-weight="700">Aprendizaje</text>
+    <text x="446" y="367" fill="#5A5A5A" font-size="12.5">
+      <tspan x="446">compartir y mejorar</tspan>
+    </text>
+  </g>
+</svg>
