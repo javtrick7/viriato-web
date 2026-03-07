@@ -4,18 +4,17 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Viriato - Una finca que produce alimento, conocimiento y decisiones mas claras"
-  description="Explotacion real, living lab y producto digital para ayudar a pequenas explotaciones a decidir mejor."
+  title="Viriato - Una finca cooperativa que produce alimento, conocimiento y decisiones más claras"
+  description="Finca cooperativa, living lab y herramienta digital para pequeñas explotaciones que quieren decidir mejor."
 >
   <section class="hero">
     <div class="container">
-      <div class="eyebrow">Viriato · explotacion real · living lab · producto digital</div>
-      <h1>Una finca que produce alimento,<br />conocimiento y decisiones mas claras</h1>
+      <div class="eyebrow">Viriato · cooperativa regenerativa · laboratorio vivo · herramienta digital</div>
+      <h1>Una finca cooperativa que produce alimento,<br />conocimiento y decisiones más claras</h1>
       <p class="subtitle">
-        Viriato convierte una explotacion real en laboratorio vivo y en
-        herramienta util para pequenas explotaciones. Agricultura
-        regenerativa, investigacion aplicada y un producto digital para leer
-        mejor el suelo y decidir mejor en campo.
+        Viriato convierte una explotación real en un laboratorio vivo y en una
+        herramienta digital pensada para pequeñas explotaciones: leer mejor el
+        suelo, regar con criterio y aprender campaña tras campaña.
       </p>
       <div class="btn-group">
         <a href={`${base}proyecto/`} class="btn btn-primary">Conocer el proyecto</a>
@@ -26,47 +25,51 @@ const base = import.meta.env.BASE_URL;
 
   <section class="section">
     <div class="container">
-      <h2>Decidir a ciegas sale cada vez mas caro</h2>
+      <h2>Decidir a ciegas sale cada vez más caro</h2>
       <p class="mt-2">
-        Las pequenas explotaciones tienen cada vez menos margen para el
-        error. El agua cuesta mas, el clima se vuelve menos predecible y
-        muchas herramientas de agricultura de precision siguen pensadas para
-        otra escala, otro presupuesto y otra realidad.
+        El agua cuesta más, el clima es menos predecible y los márgenes son más
+        estrechos. La agricultura de precisión existe, pero muchas soluciones
+        llegan con costes de compra, mantenimiento y soporte técnico
+        inasumibles para pequeñas explotaciones.
+      </p>
+      <p>
+        El problema no es la falta de tecnología: es el acceso real, la
+        complejidad y la dependencia de plataformas cerradas.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>Un sistema vivo en tres capas</h2>
+      <h2>Un sistema vivo: campo real → ciencia aplicada → herramienta útil</h2>
       <p class="mt-2 mb-3">
-        Viriato no separa artificialmente produccion, investigacion y
-        herramienta. Cada capa cumple una funcion distinta. Juntas forman un
-        sistema completo.
+        Aquí no se separa artificialmente producción, investigación y producto.
+        Cada capa cumple una función concreta y, juntas, cierran el ciclo de
+        aprendizaje.
       </p>
       <div class="grid grid-3">
         <div class="card card-accent-brown">
           <div class="card-label">Base productiva</div>
           <div class="card-title">Viriato Agropecuaria</div>
           <div class="card-body">
-            La base productiva. Una explotacion real donde se cultiva, se
-            maneja el suelo y se toman decisiones con consecuencias reales.
+            Cooperativa integral con enfoque regenerativo y ecológico: producir
+            cuidando suelo, agua y viabilidad económica.
           </div>
         </div>
         <div class="card card-accent">
           <div class="card-label">Capa experimental</div>
           <div class="card-title">Viriato Living Lab</div>
           <div class="card-body">
-            La finca funciona como infraestructura de investigacion aplicada
-            para sensorizacion, modelado y validacion en campo.
+            Sensorización, modelado y validación en condiciones reales: lo que
+            no funciona en campo, se descarta.
           </div>
         </div>
         <div class="card card-accent">
           <div class="card-label">Capa de producto</div>
           <div class="card-title">MindFarm</div>
           <div class="card-body">
-            La herramienta que convierte datos del suelo, clima y manejo en
-            informacion operativa para decidir mejor.
+            La herramienta que traduce datos de suelo, meteorología y manejo en
+            decisiones operativas comprensibles.
           </div>
         </div>
       </div>
@@ -75,44 +78,7 @@ const base = import.meta.env.BASE_URL;
 
   <section class="section">
     <div class="container">
-      <p>
-        No construimos tecnologia para el campo desde fuera del campo. La
-        construimos desde una explotacion real, con sus limites, sus ritmos y
-        sus necesidades. Eso obliga a que cada idea se pruebe de verdad y a
-        que cada herramienta tenga que demostrar utilidad.
-      </p>
-      <div class="pullquote">
-        <p>La finca hace las preguntas. El living lab las convierte en conocimiento. MindFarm las convierte en decisiones.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Del living lab al producto</h2>
-      <p class="mt-2">
-        MindFarm es la consecuencia tangible del sistema. No es una app
-        decorativa. Es la herramienta que traduce lectura de suelo,
-        meteorologia y modelos agronomicos en una pregunta concreta: que esta
-        pasando en la finca y que decision conviene tomar hoy.
-      </p>
-      <div class="btn-group">
-        <a href={`${base}mindfarm/`} class="btn btn-secondary">Ver MindFarm</a>
-        <a
-          href="https://mindfarm-demo.streamlit.app"
-          class="btn btn-primary"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Entrar en la herramienta
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Esto ya existe en campo</h2>
+      <h2>Esto ya está pasando en campo</h2>
       <div class="grid grid-3">
         <div class="metric">
           <div class="metric-value">15 min</div>
@@ -131,34 +97,24 @@ const base = import.meta.env.BASE_URL;
         </div>
       </div>
       <p class="muted text-center mt-2">
-        Despliegue operativo actual en Padul. La cifra de ahorro es una estimacion basada en benchmark regional.
+        Despliegue operativo actual en Padul. La cifra de ahorro es una
+        estimación basada en benchmark regional.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container text-center">
-      <h2>Recorre el sistema completo</h2>
-      <div class="btn-group" style="justify-content:center;">
-        <a href={`${base}proyecto/`} class="btn btn-secondary">Proyecto</a>
-        <a href={`${base}living-lab/`} class="btn btn-secondary">Living Lab</a>
-        <a href={`${base}mindfarm/`} class="btn btn-secondary">MindFarm</a>
-      </div>
-      <p class="mt-4">
-        Si quieres entender el proyecto, explorar la herramienta o abrir una
-        conversacion, el recorrido ya esta listo.
+      <h2>Elige tu siguiente paso</h2>
+      <p class="mt-2">
+        Si produces, investiga o inviertes en soluciones con impacto territorial,
+        este recorrido está pensado para ti.
       </p>
       <div class="btn-group" style="justify-content:center;">
-        <a
-          href="https://mindfarm-demo.streamlit.app"
-          class="btn btn-primary"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Entrar en la herramienta
-        </a>
-        <a href={`${base}colaboraciones/`} class="btn btn-secondary">Colaborar</a>
-        <a href="mailto:viriatocooperativa@gmail.com" class="btn btn-secondary">Contactar</a>
+        <a href={`${base}mindfarm/`} class="btn btn-secondary">Ver demo de MindFarm</a>
+        <a href={`${base}living-lab/`} class="btn btn-secondary">Explorar el Living Lab</a>
+        <a href={`${base}colaboraciones/`} class="btn btn-secondary">Plantear colaboración</a>
+        <a href={`${base}contacto/`} class="btn btn-primary">Hablar con el equipo</a>
       </div>
     </div>
   </section>
