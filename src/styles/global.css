@@ -239,6 +239,44 @@ strong { color: var(--c-text); font-weight: 600; }
   margin-top: 1rem;
 }
 
+.manifesto-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.manifesto-panel {
+  padding: 1.4rem 1.45rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(61, 107, 79, 0.12);
+  background:
+    linear-gradient(135deg, rgba(61, 107, 79, 0.08), rgba(255,255,255,0.96)),
+    #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.manifesto-item + .manifesto-item {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(61, 107, 79, 0.12);
+}
+
+.manifesto-item-title {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--c-green);
+  margin-bottom: 0.35rem;
+}
+
+.manifesto-item p {
+  margin: 0;
+  color: var(--c-text-sec);
+  line-height: 1.6;
+}
+
 .project-flow {
   position: relative;
   display: grid;
@@ -695,6 +733,10 @@ strong { color: var(--c-text); font-weight: 600; }
 
 @media (max-width: 768px) {
   .hero-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .manifesto-layout {
     grid-template-columns: 1fr;
   }
 
