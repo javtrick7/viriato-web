@@ -59,13 +59,13 @@ Viriato - Innovación agraria desde el campo para construir futuro rural
 
 **Meta description**
 
-Cooperativa, living lab y herramienta digital conectados para convertir producción real, investigación abierta y aprendizaje de campo en decisiones aplicables.
+Cooperativa integral, producción de cultivos ecológicos e investigación agraria.
 
 ### Hero
 
 **Eyebrow**
 
-Viriato · cooperativa regenerativa · living lab · herramienta digital
+Viriato · cooperativa integral · agricultura regenerativa · living lab
 
 **Título**
 
@@ -73,7 +73,9 @@ Innovación agraria para que el mundo rural siga siendo una opción de futuro
 
 **Subtítulo**
 
-Viriato nace de la necesidad de revalorizar el mundo rural y construir una alternativa de futuro sostenible desde el propio campo. Producimos, investigamos y desarrollamos herramientas útiles para que la innovación agraria refuerce actividad, autonomía y oportunidades en zonas rurales que demasiadas veces quedan fuera del foco.
+Viriato nace de una convinción: no hay futuro posible sin contar con el campo. 
+
+Paradojicamente, sin embargo, el futuro del campo es cada vez más hostil y oscuro. Con lo que las alternativas de habitabilidad del planeta a medio plazo penden de un hilo. la agricultura se enfrenta a un escenario de contingencia donde adaptarse rápidamente a los cambios es su única oportunidad, la única oportunidad para todas, y la ciencia nuestra mejor aliada. En esto cree Viriato, ciencia aplicada, abierta y de bajo coste, que permita a las pequeñas explotaciones integrar la innovación tecnológica que a día de hoy solo esta al alcance de grandes industrias agrarias. La única manera de garantizarnos un futuro es consiguiendo que el campo, las economías familiares, se adapten, y para adaptarse necesitan poder decidir más rápido, con mejor criterio, con mayor conocimiento de lo que ocurre en sus explotaciones. Cada gota de agua consumida de más puede marcar la diferencia entre ser viables o no. Necesitamos que el campo sea opción de futuro, justa y digna, porque es el futuro de todos el que está en juego.
 
 **CTAs**
 
@@ -86,23 +88,18 @@ Viriato nace de la necesidad de revalorizar el mundo rural y construir una alter
 - Piloto · Valle de Lecrín, Granada
 - Versión consultable
 
-### Un manifiesto desde el territorio
+### Que es Viriato?
 
-**Nota editorial**
-
-Bloque provisional de transición hasta sustituirlo por el manifiesto definitivo propio.
-
-**Texto principal**
-
-Creemos que el mundo rural no es un territorio del pasado, sino uno de los lugares donde se decide el futuro. En Viriato defendemos que cuidar la tierra, producir alimentos y generar conocimiento pueden formar parte de un mismo proyecto de vida: digno, inteligente y con raíces.
-
-Queremos revalorizar el mundo rural desde dentro, demostrando que es posible vivir, trabajar e innovar en el campo sin renunciar ni a la ciencia, ni a la justicia social, ni a una vida conectada con la naturaleza.
-
-Nacemos con una convicción clara: la innovación agraria no puede ser un privilegio reservado a las grandes explotaciones. La tecnología útil debe ser abierta, replicable, comprensible y asequible; una herramienta al servicio de las personas que trabajan la tierra cada día.
+Viriato es una cooperativa sin animo de lucro afincada en la Sierra de Gata, en Caceres. 
+Nos centramos en la producci'on de olivo y castano principalmente, y la investigaci'on agraria con espiritu abierto 
+investigamos el forraje verde hidroponico como alternativa para ganaderia local y cierre de flujos dentro del propio proyecto.
+aplicamos agricultura regenerativa y medimos resultados aplicando metodo cientifico riguroso.
+como parte del living lab hemos desarrollado una herramienta digital de agricultura de precision. que ocurre en mi explotacion, que va a ocurrir, que debo hacer ahora. interpretamos datos para dar recomendaciones de uso. gemelo digital que nos permite adelantarnos a distintos escenarios reduciendo riesgos y malgasto de insumos, materiales y trabajo.
+el proyecto se estructura en tres niveles. cultivos en produccion, living lab y MindFarm.
 
 **Bloque lateral: Apuesta colectiva**
 
-Viriato es una apuesta colectiva donde agroecología, ciencia de datos y compromiso social se ponen al servicio de una misma pregunta: cómo hacer del campo un lugar más habitable, más autónomo y más viable.
+Viriato es una apuesta colectiva donde agroecología, ciencia de datos y compromiso social se ponen al servicio de una misma pregunta: cómo hacer del campo un lugar más habitable, más viable y más digno.
 
 **Bloque lateral: Qué futuro defendemos**
 
@@ -119,31 +116,31 @@ Defendemos un futuro rural abierto, justo y replicable, en el que innovar no imp
 
 **Intro**
 
-Viriato se entiende mejor como un sistema vivo. La cooperativa sostiene la base productiva, el living lab valida en entorno real y MindFarm devuelve ese aprendizaje en forma de lectura práctica, alertas y recomendaciones de uso. No son tres piezas separadas: son tres formas de convertir experiencia en decisiones aplicables.
+Viriato se entiende mejor como un sistema vivo. La explotacion sostiene la base productiva, el living lab valida en entorno real y MindFarm devuelve ese aprendizaje en forma de lectura práctica, alertas y recomendaciones de uso. No son tres piezas separadas: son tres formas de convertir experiencia en decisiones aplicables.
 
 **Tarjeta 1**
 
 - Etiqueta: Base productiva
-- Título: Viriato Agropecuaria
-- Texto: La cooperativa sostiene la base productiva del proyecto: cultivo real, decisiones reales y una forma de trabajar que cuida suelo, agua, viabilidad económica, economía familiar y continuidad rural.
+- Título: Olivo y Castano
+- Texto: Los cultivos sostienen la base productiva del proyecto: cultivo real, decisiones reales y un espacio donde aplicar el conocimiento adquirido por la investigacion.
 
 **Tarjeta 2**
 
 - Etiqueta: Capa experimental
 - Título: Viriato Living Lab
-- Texto: El living lab contrasta hipótesis en entorno productivo y convierte observación en método, validación y aprendizaje compartido.
+- Texto: El living lab es la parte de investigacion del proyecto, analizamos nuevas tecnicas de cultivo, m'as sostenibles y respetuosas, contrastamos las hipótesis en entorno productivo y convertimos lo aprendido en método.
 
 **Tarjeta 3**
 
 - Etiqueta: Capa de producto
 - Título: MindFarm
-- Texto: La herramienta devuelve ese aprendizaje a la explotación en forma de interpretación, memoria acumulada, alertas y apoyo práctico a la toma de decisiones.
+- Texto: La herramienta que permite agilizar y simplificar los procesos de una explotacion agraria.Seguimiento del estado de las cosechas, recomendaciones de riego, alertas de plagas. Totalmente Open y customizable, disenada tanto para soporte diario del personal tecnico de campo, como para gestion y tratamiento de datos en los proyectos de investigacion. 
 
 ### Esto ya está pasando en campo
 
 **Texto de sección**
 
-Viriato no parte de una idea abstracta ni de una promesa futura. Parte de una finca, de una cooperativa y de un sistema que ya está produciendo, midiendo, aprendiendo y devolviendo capacidad de decisión al día a día de la explotación.
+Viriato no parte de una idea abstracta ni de una promesa futura. Parte de una finca, de una cooperativa y de un sistema que ya está produciendo, midiendo, aprendiendo y devolviendo capacidad de decisión al día a día de la explotación. [enlace a MindFarm]
 
 **Métrica 1**
 
@@ -171,7 +168,7 @@ Despliegue operativo actual en Valle de Lecrín, Granada. La cifra de ahorro es 
 
 **Texto**
 
-Producción, investigación aplicada y herramienta digital conviven aquí dentro de un mismo ciclo. Puedes entrar por la visión general del proyecto, por el método con el que validamos en campo o por la herramienta que convierte ese aprendizaje en uso práctico.
+Producción, investigación aplicada y herramienta digital conviven aquí dentro de un mismo ciclo. Puedes investigar m'as en detalle de cualquiera de ellas en los siguientes enlaces.
 
 **CTAs**
 
